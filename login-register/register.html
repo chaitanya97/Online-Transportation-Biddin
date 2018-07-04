@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="animate.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    
+
+  <script src="js/bootstrap.min.js"></script> 
+  <style type="text/css">
+  	.navbar {
+  background-color: #2c3e50;
+}
+.navbar .navbar-brand {
+  color:white;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: white;
+}
+.navbar .navbar-nav .dropdown-menu {
+  background-color: #2c3e50;
+  border-color: #2ecc71;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color:white;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+  color: #ecdbff;
+  background-color: #2ecc71;
+}
+.navbar .navbar-nav .dropdown-menu  {
+  border-top-color: #2ecc71;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color:white;
+  background-color: #2ecc71;
+ 
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:focus 
+{
+  color: white;
+  background-color: #2ecc71;
+}
+.navbar .navbar-nav .nav-item .nav-link
+{
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: sans-serif;;
+}
+
+.navbar-toggle
+  {
+    
+    
+    border:2px solid #2ecc71;
+    box-shadow: 5px 3px -1px #ccc;
+      }
+
+  
+  .icon-bar
+  {
+    background-color:white;
+  }
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border:0;
+}
+.navbar .navbar-link {
+  color: #ecf0f1;
+}
+.navbar .navbar-link:hover {
+  color: #ecdbff;
+}
+.navbarbtn
+{
+ font-size: 12px;
+ font-weight:bold;
+ font-family: sans-serif;
+ letter-spacing: 1px;
+ text-align: center; 
+ border-radius:1px;
+ color: white;
+ border:2px solid white;
+}
+.navbarbtn:hover
+{
+  background-color: #2ecc71;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #ecf0f1;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: #ecdbff;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #ecdbff;
+  background-color: #2ecc71;
+}
+@media (max-width: 575px) {
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #2ecc71;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #2ecc71;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #2ecc71;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #2ecc71;
+  }
+}
+
+#breadcrumb
+{
+     height: 250px;
+
+}
+.thumbnail
+{
+	cursor: pointer;
+	height: 270px;
+
+}
+
+.thumbnail .image
+{
+	background-color: #2ecc71;
+	color: white;
+}
+.caption h5
+{
+	text-align:left;
+	font-size:16px;
+	font-weight: 400;
+	letter-spacing:0.8px;font-family: sans-serif;
+}
+.registerform
+{
+	 box-shadow: 8px 4px 8px rgba(0,0,0,0.1),0 6px 16px 0 rgba(0,0,0,0.1);
+	 height:420px;
+	 border-top: 4px solid #2c3e50;
+}
+.registerform h3
+{
+	font-size:28px;
+	font-family: Aileron sans-serif;
+	letter-spacing: 1px;
+}
+
+@media (max-width:768px)
+
+{
+
+	.registerform
+	{
+		height:1100px;
+
+
+	}
+	.subscribebtn
+	{
+		top:5px;
+		position: relative;
+	}
+	
+}
+@media (max-width: 1199px)
+{
+	.registerform
+	{
+		position: relative;
+		top:20px;
+	}
+	.thumbnail
+	{
+		height:300px;
+	}
+	
+}
+
+.jumbotron
+{
+  color: white;
+}
+
+.chevron
+{
+  position: relative;
+  float: right;
+  top: 20px;
+}
+
+.subscribebtn
+{
+	background-color:#2ecc71;
+	color: white;
+	width: 150px; 
+}
+.subscribebtn:hover
+{
+	color: white;
+}
+@media screen (max-width: 768px) {
+	
+	
+}
+.contact
+{
+	padding-left:25px;
+}
+.cities a
+{
+  color: white;
+}
+
+.caption h5:hover
+{
+	color:#e74c3c;
+	text-decoration: none;
+}
+.registerbtn
+{
+	display: inline-block;
+
+  background-color:#2ecc71;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size:18px;
+   cursor: pointer;
+  margin: 5px;
+
+}
+
+.registerbtn:hover
+{
+	background-color: #2c3e50;
+	color: white;
+}
+
+</style>
+</head>
+<body data-target=".navbar" data-offset="10" data-spy="scroll" id="mypage">
+
+<nav class="navbar sticky-top navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       
+        <span class="icon-bar" ></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">BookaTruck</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <form class="navbar-form navbar-right">
+        <div class="form-group">
+        
+        </div>
+        <a  type="button" class="btn navbarbtn" href="adminlogin.html">LOGIN</a>
+        <a type="button" class="btn navbarbtn" href="register.html">REGISTER</a>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class=" nav-item"><a href="#" class="nav-link">HOME <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link">ABOUT US</a></li>
+        <li class="dropdown nav-item">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">USEFUL LINKS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#" class="nav-link">FAQ</a></li>
+            <li class="dropdown-item" ><a href="#" class="nav-link">FLEET</a></li>
+            
+            <li class="dropdown-item"><a href="#" class="nav-link">TUTORIALS</a></li>
+            
+            <li class="dropdown-item"><a href="#" class="nav-link">BLOG</a></li>
+       
+            <li class="dropdown-item"><a href="#" class="nav-link">NEWS</a></li>
+          </ul>
+        </li>
+         <li class="nav-item"><a href="#" class="nav-link">GPS SERVICES</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">INSURANCE</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">CONTACT US</a></li>
+      </ul>
+     
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<br><br><br><br><br><br>
+
+  <div class="container text-center registerform">
+  <br>
+      <h3>Choose Your Account Type</h3>
+<br>
+      <div class="row">
+           <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="thumbnail">
+               
+                    <div class="image">
+                          <span style="font-size: 50px;text-align:center"><i class="fa fa-industry" aria-hidden="true"></i></span>
+                                                             
+                                            <h4>Client/ Shipper</h4>
+                                            <br>
+                    </div>
+                    
+                      <div class="caption">
+                          <h5 style="text-align: left">Any Individual/MNC/SME/Organisation who wants to ship its materials</h5>
+                          <a class="btn registerbtn" style="position: relative;top: 10px;" href="clientregister.html">Click Here</a>
+                      </div>
+                      
+
+               </div>
+
+
+
+
+           </div>
+           <div class="col-md-4 col-sm-4 col-xs-12">
+
+          <div class="thumbnail">
+           <div class="image">
+           <span style="font-size: 50px"><i class="fa fa-truck" aria-hidden="true"></i></span>
+              <h4>Transporter</h4>
+              <br>
+           </div>
+          
+           <div class="caption">
+             <h5 style="text-align: left">Good Transport Agency (GTA). I have my own trucks but also hire vehicles from the market </h5>
+              <a class="btn registerbtn" style="position: relative;top: -8px;" href="transporterregister.html">Click Here</a>
+             </div>
+
+           </div>
+           </div>
+           
+            <div class="col-md-4 col-sm-4 col-xs-12">
+
+         <div class="thumbnail">
+            <div class="image">
+              <span style="font-size: 50px"><i class="fa fa-truck" aria-hidden="true"></i></span>
+               <h4>Fleet Owner/Broker</h4>
+               <br>
+               </div>
+               
+               <div class="caption">
+               <h5 style="text-align: left">I have Trucks want to find Loads</h5>
+                <a class="btn registerbtn" style="position: relative;top:28px;" href="brokerregister.html">Click Here</a>
+               <br>
+
+               </div>
+              </div>
+              </div>
+           
+    </div>
+
+</div>
+
+<br><br><br><br><br>
+
+
+      <div class="jumbotron text-center cities" style="background-color:#2c3e50;color:white;" >
+        <div class="container">
+          <h2 style="letter-spacing: 1.5px;text-align: center;font-size:29px;font-family: sans-serif;">CITIES</h2>
+          <br>
+         <div class="row">
+           <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank"> Jammu</a></div>
+            <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Hyderabad</a></div>
+             <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Visakhapatnam</a></div>
+              <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Mumbai</a></div>
+               <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Delhi</a></div>
+                <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Nagpur</a></div>
+                </div><br>
+                <div class="row">
+           <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Allahabad</a></div>
+            <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Chennai</a></div>
+             <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Chandigarh</a></div>
+              <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Pune</a></div>
+               <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Noida</a></div>
+                <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Warangal</a></div>
+                </div><br>
+                <div class="row">
+           <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Jaipur</a></div>
+            <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Mathura</a></div>
+             <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Kochi</a></div>
+              <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Bengaluru</a></div>
+               <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Kolkata</a></div>
+                <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Mysore</a></div>
+                </div><br>
+                  <div class="row">
+           <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Alwar</a></div>
+            <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Srikakulam</a></div>
+             <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Roorkee</a></div>
+              <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Raipur</a></div>
+               <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Jamshedpur</a></div>
+                <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Patna</a></div>
+                </div>
+                <br>
+                  
+                      <br>
+
+          </div>
+   </div>
+
+   <div class="container">
+   <div class="contact">
+     <div class="row">
+                       <div class="col-md-6">
+                            <h5>Contact us at <span style="font-size: 16px;font-weight: 900">011-39595395</span> for any queries</h5>
+                               <h5>Copyright <span>	&#169;</span> bookatruck,in All rights are reserved</h5>
+                      </div>
+                      <div class="col-md-6">
+                    
+                      
+                          <label class="control-label" for="Subscribeemail">Subscribe to our Updates</label>
+                          <form class="form-inline">
+                          <div class="form-group">
+                          <input type="email" name="email" id="Subscribeemail" class="form-control" style="width:230px;">
+                          <button class="btn subscribebtn">Subscribe Now</button>
+                        </div>
+                          </form>
+                      </div>
+                      </div>
+                      </div>
+
+   <a href="#mypage"  title="To Top" class="chevron" style="color:#2c3e50 ;font-size: 25px;">
+    <span class="glyphicon glyphicon-chevron-up" style="text-align: center"></span>
+  </a>
+
+                      </div>
+
+                 
+<script type="text/javascript">
+	 $(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, .container a[href='#mypage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+
+</body>
+</html>

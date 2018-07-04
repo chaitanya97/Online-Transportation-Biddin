@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ClientRegister</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="animate.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    
+
+  <script src="js/bootstrap.min.js"></script> 
+  <style type="text/css">
+  	 .navbar {
+  background-color: #2c3e50;
+}
+.navbar .navbar-brand {
+  color:white;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: white;
+}
+.navbar .navbar-nav .dropdown-menu {
+  background-color: #2c3e50;
+  border-color: #2ecc71;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color:white;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+  color: #ecdbff;
+  background-color: #2ecc71;
+}
+.navbar .navbar-nav .dropdown-menu  {
+  border-top-color: #2ecc71;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color:white;
+  background-color: #2ecc71;
+ 
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:focus 
+{
+  color: white;
+  background-color: #2ecc71;
+}
+.navbar .navbar-nav .nav-item .nav-link
+{
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: sans-serif;;
+}
+
+.navbar-toggle
+  {
+    
+    
+    border:2px solid #2ecc71;
+    box-shadow: 5px 3px -1px #ccc;
+      }
+
+  
+  .icon-bar
+  {
+    background-color:white;
+  }
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border:0;
+}
+.navbar .navbar-link {
+  color: #ecf0f1;
+}
+.navbar .navbar-link:hover {
+  color: #ecdbff;
+}
+.navbarbtn
+{
+ font-size: 12px;
+ font-weight:bold;
+ font-family: sans-serif;
+ letter-spacing: 1px;
+ text-align: center; 
+ border-radius:1px;
+ color: white;
+ border:2px solid white;
+}
+.navbarbtn:hover
+{
+  background-color: #2ecc71;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #ecf0f1;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: #ecdbff;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #ecdbff;
+  background-color: #2ecc71;
+}
+@media (max-width: 575px) {
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #2ecc71;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #2ecc71;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #2ecc71;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #2ecc71;
+  }
+}
+
+
+
+.registerform
+{
+	 box-shadow: 8px 4px 8px rgba(0,0,0,0.1),0 6px 16px 0 rgba(0,0,0,0.1);
+	 height:350px;
+   position: relative;
+   top:30px;
+	 border-top: 4px solid #2c3e50;
+}
+.registerform h4
+{
+	font-size:28px;
+	font-family: Aileron sans-serif;
+	letter-spacing: 1px;
+}
+.
+
+
+.form-control:focus
+{
+  border:0.4px solid #2c3e50;
+}
+
+.form-control
+{
+    
+}
+
+.input-group-addon
+{
+  opacity: 0.8;
+  width: 140px;
+  text-align: left;
+}
+
+.loginbtn
+{
+  float: left;
+  left: 0;
+  width: 100px;
+  background-color: #2c3e50;
+  color: white;
+
+  position: relative;
+
+}
+
+.loginbtn:hover
+{
+  color: white;
+}
+.signupbtn
+{
+  float: right;
+  width: 100px;
+  background-color:#2ecc71;
+  color: white;
+
+  position: relative;
+
+}
+
+.signupbtn:hover
+{
+  color: white;
+}
+
+@media (max-width:991px) 
+
+{
+    .registerform
+    {
+      height:510px;
+      position: relative;
+      top:70px;
+
+    } 
+     .loginbtn
+    {
+      position: relative;
+      top: 15px;
+    }
+
+
+}
+@media (max-width:768px) 
+
+{
+    .registerform
+    {
+      height:525px;
+      position: relative;
+      top: 20px;
+    }
+    .input-group-addon
+   {
+      font-size: 10px;
+      width:15px;
+   
+   }
+   .form-control
+   {
+      width: 150px;
+     
+    }
+    .loginbtn
+    {
+      position: relative;
+      top: 15px;
+    }
+   }
+.jumbotron
+{
+  color: white;
+}
+
+.chevron
+{
+  position: relative;
+  float: right;
+  top: 20px;
+}
+
+.subscribebtn
+{
+  background-color:#2ecc71;
+  color: white;
+  width: 150px; 
+}
+.subscribebtn:hover
+{
+  color: white;
+}
+@media  (max-width: 768px) {
+  .subscribebtn
+  {
+    top:5px;
+    position: relative;
+  }
+  
+}
+.contact
+{
+  padding-left:25px;
+}
+
+
+.cities a
+{
+  color: white;
+}
+.client-shipper
+
+  {
+     background-color:#2ecc71;
+     height:75px;
+      
+ 
+  }
+  .client-shipper h3
+  {
+    color: white;
+    position: relative;
+    top: 10px;
+  }
+
+  
+  .text
+{
+  color:red;
+  font-size:36px;
+}
+  </style>
+</head>
+<body data-spy="scroll" data-target= ".navbar" data-offset = "10" id="mypage">
+<nav class="navbar sticky-top navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       
+        <span class="icon-bar" ></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">BookaTruck</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <form class="navbar-form navbar-right">
+        <div class="form-group">
+        
+        </div>
+        <a  type="button" class="btn navbarbtn" href="adminlogin.html">LOGIN</a>
+        <a type="button" class="btn navbarbtn" href="register.html">REGISTER</a>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class=" nav-item"><a href="#" class="nav-link">HOME <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link">ABOUT US</a></li>
+        <li class="dropdown nav-item">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">USEFUL LINKS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#" class="nav-link">FAQ</a></li>
+            <li class="dropdown-item" ><a href="#" class="nav-link">FLEET</a></li>
+            
+            <li class="dropdown-item"><a href="#" class="nav-link">TUTORIALS</a></li>
+            
+            <li class="dropdown-item"><a href="#" class="nav-link">BLOG</a></li>
+       
+            <li class="dropdown-item"><a href="#" class="nav-link">NEWS</a></li>
+          </ul>
+        </li>
+         <li class="nav-item"><a href="#" class="nav-link">GPS SERVICES</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">INSURANCE</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">CONTACT US</a></li>
+      </ul>
+     
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<br><br>
+
+<div class="container-fluid client-shipper">
+
+  
+<h3>Transporter</h3>
+    
+
+
+ </div>
+
+<div class="container-fluid" style="">
+
+<div class="row">
+<div class="col-md-7 col-md-offset-3 registerform col-sm-7 col-sm-offset-3 col-xs-12 col-lg-7">
+<h3 style="text-align: center;">Enter Business Information</h3>
+<br><br>
+
+   <div class="col-md-6">
+
+   <form method="post" action="/action_page_post.php" onsubmit="return validateForm()" name="myForm">
+                        <div class="form-group">
+                             <div class="input-group">
+                                   <span class="input-group-addon">Full Name</span>
+                                   <input type="text" name="fullname" id="fullname" class="form-control" size="60" required>
+                              </div>
+                          
+                         </div>  
+
+
+                          <div class="form-group">
+                             <div class="input-group">
+                                   <span class="input-group-addon">Email Id</span>
+                                   <input type="email" name="email" id="emailId" class="form-control" size="60" required>
+                              </div>
+                          
+                         </div>  
+                        <div class="form-group">
+                             <div class="input-group">
+                                   <span class="input-group-addon">Confirm Password</span>
+                                   <input type="password" name="password" id="Password" class="form-control" size="60" required>
+                              </div>
+                          
+                         </div>  
+
+                       </form>  
+
+
+
+
+
+
+                      
+     </div>
+     <div class="col-md-6">
+
+                             <div class="form-group">
+                                 <div class="input-group">
+                                   <span class="input-group-addon">Mobile No</span>
+                                   <input type="text" name="Mobilenumber" id="MobileNumber" class="form-control" size="60">
+                                 </div>
+                          
+                         </div>  
+
+                          <div class="form-group">
+                             <div class="input-group">
+                                   <span class="input-group-addon">Password</span>
+                                   <input type="password" name="Password" id="Password" class="form-control" size="60">
+                              </div>
+                          
+                         </div>  
+
+                               <div class="form-group">
+                             <div class="input-group">
+                                   <span class="input-group-addon">Company Name</span>
+                                   <input type="text" name="text" id="CompanyName" class="form-control" size="60">
+                              </div>
+                          
+                         </div><br><br>
+
+                         <div class="row">
+                           <div class="col-md-6">
+                                  <div class="form-group">
+                                     <a class="btn loginbtn"  href="adminlogin.html"><span  class="glyphicon glyphicon-arrow-left"></span>      Back</a>
+                                   </div>
+
+                           </div>
+                           <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <a class="btn signupbtn" href="#"><span  class="glyphicon glyphicon-arrow-right"></span>  Sign Up</a>
+                                </div>
+
+                            </div>
+                            
+                            </div>    
+
+
+                          
+
+                        
+                       
+
+
+      
+     </div>
+
+
+                           <div class="check-box">
+
+                              <label><input type="checkbox" value=""> I accept the <span style="color: blue;"><a href="#">Terms of Service</a></span> and <span style="color: blue;"><a href="#">Privay Policy</a></span></label>
+                            
+                                  
+                              </div>
+                          
+                         
+       </div>
+       </div>
+  
+  </div>
+
+<br><br><br><br><br>
+
+   <div class="jumbotron text-center cities" style="background-color:#2c3e50;color:white;" >
+        <div class="container">
+          <h2 style="letter-spacing: 1.5px;text-align: center;font-size:29px;font-family: sans-serif;">CITIES</h2>
+          <br>
+         <div class="row">
+           <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank"> Jammu</a></div>
+            <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Hyderabad</a></div>
+             <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Visakhapatnam</a></div>
+              <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Mumbai</a></div>
+               <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Delhi</a></div>
+                <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Nagpur</a></div>
+                </div><br>
+                <div class="row">
+           <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Allahabad</a></div>
+            <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Chennai</a></div>
+             <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Chandigarh</a></div>
+              <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Pune</a></div>
+               <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Noida</a></div>
+                <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Warangal</a></div>
+                </div><br>
+                <div class="row">
+           <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Jaipur</a></div>
+            <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Mathura</a></div>
+             <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Kochi</a></div>
+              <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Bengaluru</a></div>
+               <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Kolkata</a></div>
+                <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Mysore</a></div>
+                </div><br>
+                  <div class="row">
+           <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Alwar</a></div>
+            <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Srikakulam</a></div>
+             <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Roorkee</a></div>
+              <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Raipur</a></div>
+               <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Jamshedpur</a></div>
+                <div class="col-md-2 col-xs-6 col-sm-4"><a href="" target="_blank">Patna</a></div>
+                </div>
+                <br>
+                  
+                      <br>
+
+          </div>
+   </div>
+
+   <div class="container">
+   <div class="contact">
+     <div class="row">
+                       <div class="col-md-6">
+                            <h5>Contact us at <span style="font-size: 16px;font-weight: 900">011-39595395</span> for any queries</h5>
+                               <h5>Copyright <span> &#169;</span> bookatruck,in All rights are reserved</h5>
+                      </div>
+                      <div class="col-md-6">
+                    
+                      
+                          <label class="control-label" for="Subscribeemail">Subscribe to our Updates</label>
+                          <form class="form-inline">
+                          <div class="form-group">
+                          <input type="email" name="email" id="Subscribeemail" class="form-control" style="width:230px;">
+                          <button class="btn subscribebtn">Subscribe Now</button>
+                        </div>
+                          </form>
+                      </div>
+                      </div>
+                      </div>
+
+   <a href="#mypage"  title="To Top" class="chevron" style="color:#2c3e50 ;font-size: 25px;">
+    <span class="glyphicon glyphicon-chevron-up" style="text-align: center"></span>
+  </a>
+
+                      </div>
+
+                 
+
+
+<script type="text/javascript">
+   $(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, .container a[href='#mypage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<script type="text/javascript">
+  
+  function validateForm() {
+    var x = document.forms["myForm"]["fullname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+
+
+  
+
+</body>
+</html>
